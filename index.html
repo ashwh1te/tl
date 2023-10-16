@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Павлов Вячеслав 28/2</title>
-    <style>
-        a {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+
+<title> Павлов Вячеслав 28/2</title>
+<style>
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;}
+</style>
 </head>
 <body class="root">
-    <header>
-        <nav>
-            <img src="images/logo.png" alt="Логотип" class="logo">
+
+<header>
+    <div class="headerer">
+    <div class="head">
+    <img src="images/logo.png" alt="Логотип" class="logo">
             <h1>Polar Point</h1>
-            <ul class="nav-wraper">
-                <li class="navnav"><a href="#table" class="navnavnav">Таблица</a></li>
-                <li class="navnav"><a href="#form" class="navnavnav">Форма</a></li>
-            </ul>
-        </nav>
-    
-    </header>    
-    <main>
-        <div class="main-selection1">
-            <div class="front-block">
-        <ol>
-            <li><a href="http://kubsu.ru/">Абсолютная ссылка КубГу</a></li>
+    </div>
+    <nav>
+        <ul class="nav-menu">
+            <li class="navnav"><a href="#table" class="navnavnav">Таблица</a></li>
+            <li class="navnav"><a href="#form" class="navnavnav">Форма</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<main>
+    <div class="main-section1">
+        <div class="front-block">
+    <ol>
+      <li><a href="http://kubsu.ru/">Абсолютная ссылка КубГу</a></li>
             <li><a href="https://kubsu.ru/">Абсолютная ссылка КубГу в протаколе https</a></li>
             <li><a href="https://youtu.be/A-BaM9OMsVg?si=_MskNYs1DyC41dOi"><img src="images/meow.jpg" alt="Кот" style="width: 200px; height: 100px"></a></li>
             <li><a href="/page2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
@@ -60,11 +64,12 @@
                 <li title="третий"><a href="./about/about.html">Ссылка в списке 3</a></li>
             </ol></li>
             <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">Файл ftp</a></li>
-        </ol>
-                <a id="table"></a>
-                    <div class="front-block first-table">
-            <table>
-                <caption>Таблица</caption>
+    </ol>
+    </div>
+    <a id="table"></a>
+    <div class="front-block first-table ">
+    <table>
+       <caption>Таблица</caption>
                 <thead>
                 <tr>
                     <td></td>
@@ -115,62 +120,64 @@
                     <td>point guard</td>
                 </tr>
                 </tfoot>
-            </table>
-                    </div>
+    </table>
+    </div>
     <a id="form"></a>
-    <form method="post" action="/" class="forms">
-    <label>
-        <br />
-        <input placeholder="ФИО" required/>
-    </label><br />
-    <label>
-        <input type="tel" placeholder="Телефон" required/>
-    </label><br />
-    <label>
+    <form method="post" action="/" class="forms front-block">
+        <label>
+            <br />
+            <input placeholder="ФИО" required/>
+        </label><br />
+        <label>
+            <input type="tel" placeholder="Телефон"  required pattern="#[ 0-9]"/>
+        </label><br />
         <input type="email" placeholder="Email" required/>
-    </label><br />
-    <label>
-        Дата рождения <br/>
-        <input type="date" required/>
-    </label><br />
-    <label>
-    <input type="radio" value="male" required/>
-    мужской</label>
-    <label>
-    <input type="radio" value="female" required/>
-    женский</label> <br />
-    <label>
-        <br />
-        <select required>
-            <option disabled>Любимый язык программирования</option>
-            <option value="Pascal">Pascal</option>
-            <option value="C" >C</option>
-            <option value="C++" >C++</option>
-            <option value="JavaScript" >JavaScript</option>
-            <option value="PHP" >PHP</option>
-            <option value="Python" >Python</option>
-            <option value="Java" >Java</option>
-            <option value="Haskel" >Haskel</option>
-            <option value="Clojure" >Clojure</option>
-            <option value="Prolog" >Prolog</option>
-            <option value="Scala" >Scala</option>
-        </select>
-    </label><br />
-    <label>
-        <textarea placeholder="Bio" required></textarea>
-    </label><br />
-    <label>
-        С контрактом ознакомился
-        <input type="checkbox" required>
-    </label><br />
-    <input type="submit" value="Отправить" />
-</form>    
-        
-    </main>
-    <footer>
-        <a id="podval"></a>
-        <p>(c)Павлов Вячеслав Андреевич</p>
-    
-    </footer>
+        </label><br />
+        <label>
+            Дата рождения <br/>
+            <input type="date" required />
+        </label><br />
+        <label>
+            <input name=sex type="radio" value="male" required />
+            Мужской</label>
+        <label>
+            <input name=sex type="radio" value="female" required/>
+            Женский</label> <br />
+        <label>
+            <br />
+            <select required>
+                <option disabled> Любимый язык программирования </option>
+                <option value="Pascal"> Pascal </option>
+                <option value="C"> C </option>
+                <option value="C++"> C++ </option>
+                <option value="JavaScript"> JavaScript </option>
+                <option value="PHP"> PHP </option>
+                <option value="Python"> Python </option>
+                <option value="Java"> Java </option>
+                <option value="Haskel"> Haskel </option>
+                <option value="Clojure"> Clojure </option>
+                <option value="Prolog"> Prolog </option>
+                <option value="Scala"> Scala </option>
+            </select>
+        </label><br/>
+        <label>
+            <textarea placeholder="Bio" required></textarea>
+        </label><br/>
+        <label>
+            С контрактом ознакомился
+            <input type="checkbox" required>
+        </label><br/>
+        <input type="submit" value="Отправить"/>
+    </form>
+    </div>
+</main>
+
+<footer>
+    <a id="podval"></a>
+    <p>Преподаватель: Синица Сергей Геннадьевич</p><br>
+    <p>Студент: Павлов Вячеслав Андреевич</p>
+
+</footer>
+
 </body>
 </html>
