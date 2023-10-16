@@ -1,5 +1,5 @@
 .root {
-    background-color:#7c39af;
+    background-color:#303030;
     margin: 0;
     padding: 0;
     background-attachment: fixed;
@@ -8,7 +8,7 @@
 header
 {
     max-width: 100%;
-    background-color: #4b1e79;
+    background-color: #292929;
     display: flex;
     justify-content: center;
     margin: 0;
@@ -96,7 +96,7 @@ nav
 
 footer
 {
-    background-color: #4b1e79;
+    background-color: #292929;
     margin: 0;
     max-width: 100%;
     position: relative;
@@ -130,11 +130,12 @@ footer
 .front-block {
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 15px;
+    box-shadow: 0 0 1px dimgrey;
     margin: 10px 0;
 }
 main
 {
-    background-color: #3b1f50;
+    background-color: #252525;
     max-width: 95%;
     margin: 0 auto;
     border-radius: 15px;
